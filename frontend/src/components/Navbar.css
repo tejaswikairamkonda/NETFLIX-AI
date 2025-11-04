@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background-color: #141414;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* 🔥 NetflixAI Logo */
+.logo {
+  display: flex;
+  align-items: baseline;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.2rem; /* bigger logo */
+  cursor: pointer;
+  user-select: none;
+  line-height: 1;
+}
+
+.netflix {
+  color: #e50914;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0 0 18px rgba(229, 9, 20, 0.7);
+}
+
+.ai {
+  color: #ffffff;
+  margin-left: 8px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 2.4rem;
+}
+
+/* 🔍 Search Bar */
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 400px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  background-color: #333;
+  width: 440px;
+}
+
+.search-bar::placeholder {
+  color: #888;
+}
+
+/* ⚙️ Navigation Links */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: #e50914;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .search-bar {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .nav-right {
+    gap: 15px;
+  }
+}

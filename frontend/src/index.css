@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CineAI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Intro Animation -->
+  <div id="intro-screen">
+    <video autoplay muted id="intro-video">
+      <source src="logo.mp4" type="video/mp4" />
+    </video>
+    <audio id="intro-sound" src="intro.mp3"></audio>
+  </div>
+
+  <!-- Main App -->
+  <div id="app" style="display: none;">
+    <nav class="navbar">
+      <div class="logo">Cine<span>AI</span></div>
+      <div class="nav-links">
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="categories-link">Categories</a>
+        <a href="#" id="upcoming-link">Upcoming</a>
+        <a href="#" id="top-stars-link">Top Stars</a>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/847/847969.png"
+          alt="Profile"
+          width="40"
+          height="40"
+          class="profile-icon"
+        />
+      </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input id="searchInput" placeholder="Search for movies..." />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- Movie Sections -->
+    <section>
+      <h2>Trending Movies</h2>
+      <div id="trending" class="movies-container"></div>
+    </section>
+
+    <section>
+      <h2>Top Rated</h2>
+      <div id="topRated" class="movies-container"></div>
+    </section>
+
+    <section>
+      <h2>Upcoming</h2>
+      <div id="upcoming" class="movies-container"></div>
+    </section>
+
+    <!-- Chatbot -->
+    <button id="chatBtn" class="chat-btn">💬</button>
+
+    <div id="chatPanel" class="chat-panel" style="display:none;">
+      <div id="chatMessages" class="chat-messages"></div>
+      <div class="chat-input">
+        <input id="chatInput" placeholder="Ask CineAI..." />
+        <button id="chatSend">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.top-actors {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.actor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.actor-card {
+  background: #141414;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.actor-card:hover {
+  transform: scale(1.05);
+}
+
+.actor-image {
+  width: 100%;
+  border-radius: 10px;
+}
